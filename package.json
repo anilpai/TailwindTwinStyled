@@ -13,12 +13,12 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1",
-    "tailwind.macro": "^1.0.0-alpha.10",
-    "tailwindcss": "^1.5.1"
+    "tailwindcss": "^1.5.1",
+    "twin.macro": "^1.5.0"
   },
   "scripts": {
-    "build:css": "postcss src/tailwind.css -o src/index.css",
-    "watch:css": "postcss src/tailwind.css -o src/index.css",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/style.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/style.css",
     "start": "npm run watch:css & react-scripts start",
     "build": "npm run build:css react-scripts build",
     "test": "react-scripts test",

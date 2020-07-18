@@ -1,10 +1,10 @@
 import React from 'react';
-import "./index.css";
-import AppStyles from "./AppStyles.styles.tw"
+import StyledForm from "./styles";
 
 const App = () => {
   return (
-    <AppStyles>
+    <StyledForm>
+      <section>
       <h1>Treact</h1>
       <p>
         Welcome to your CRA / TailwindCSS / Styled Components
@@ -23,7 +23,14 @@ const App = () => {
           <a href="https://styled-components.com/">Styled Components</a>
         </li>
       </ul>
-    </AppStyles>
+      </section>
+      <form>
+        <input type="text" placeholder="Full name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Password" />
+        <button>Sign In</button>
+      </form>
+    </StyledForm>
   );
 }
 
