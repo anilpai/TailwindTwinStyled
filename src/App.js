@@ -1,22 +1,29 @@
 import React from 'react';
+import "./index.css";
+import AppStyles from "./AppStyles.styles.tw"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyles>
+      <h1>Treact</h1>
+      <p>
+        Welcome to your CRA / TailwindCSS / Styled Components
+      </p>
+      <h2>Resources / Documentation</h2>
+      <ul>
+        <li>
+          <a href="https://reactjs.org/docs/create-a-new-react-app.html">
+            ReactJS
+          </a>
+        </li>
+        <li>
+          <a href="https://tailwindcss.com/">TailwindCSS</a>
+        </li>
+        <li>
+          <a href="https://styled-components.com/">Styled Components</a>
+        </li>
+      </ul>
+    </AppStyles>
   );
 }
 
